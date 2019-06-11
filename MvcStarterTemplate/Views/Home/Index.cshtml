@@ -1,0 +1,11 @@
+﻿@using System.Globalization
+
+@{
+    ViewData["Title"] = Localizer.Text("Home Page");
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>@Localizer.Text("Current Culture") : @CultureInfo.CurrentCulture.DisplayName (@CultureInfo.CurrentCulture.NativeName)</p>
+
+<p>@Localizer.Text("Current Date") : @DateTime.Now</p>
